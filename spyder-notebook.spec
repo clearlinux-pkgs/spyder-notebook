@@ -14,7 +14,7 @@ Requires: spyder-notebook-python3
 Requires: spyder-notebook-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
