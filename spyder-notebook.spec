@@ -4,7 +4,7 @@
 #
 Name     : spyder-notebook
 Version  : 0.2.2
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/a6/be/36e6db95eab4cf9f4f024cfd87d44216a445b29eccc8b526982e316ddded/spyder-notebook-0.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a6/be/36e6db95eab4cf9f4f024cfd87d44216a445b29eccc8b526982e316ddded/spyder-notebook-0.2.2.tar.gz
 Summary  : Jupyter notebook integration with Spyder
@@ -26,7 +26,10 @@ BuildRequires : psutil
 BuildRequires : requests
 
 %description
-This package allows the Jupyter notebook to run inside Spyder as a plugin.
+# Spyder notebook plugin
+Spyder plugin to use Jupyter notebooks inside Spyder. Currently it supports
+basic functionality such as creating new notebooks, opening any notebook in
+your filesystem and saving notebooks at any location.
 
 %package license
 Summary: license components for the spyder-notebook package.
@@ -49,7 +52,13 @@ python components for the spyder-notebook package.
 Summary: python3 components for the spyder-notebook package.
 Group: Default
 Requires: python3-core
-Provides: pypi(spyder-notebook)
+Provides: pypi(spyder_notebook)
+Requires: pypi(nbformat)
+Requires: pypi(notebook)
+Requires: pypi(psutil)
+Requires: pypi(qtpy)
+Requires: pypi(requests)
+Requires: pypi(spyder)
 
 %description python3
 python3 components for the spyder-notebook package.
@@ -64,8 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582917817
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583697972
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
