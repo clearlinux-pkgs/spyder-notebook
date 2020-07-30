@@ -1,5 +1,5 @@
 PKG_NAME := spyder-notebook
-URL = https://files.pythonhosted.org/packages/2b/62/a428804eac331d4605fc8cb2220f64d0725583d60a31f0daf73175123e8a/spyder-notebook-0.2.3.tar.gz
+URL = https://files.pythonhosted.org/packages/81/ac/f15a79e7d123b29919b5f36593c30e157555957e21e62fb142fbb290357d/spyder-notebook-0.3.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
