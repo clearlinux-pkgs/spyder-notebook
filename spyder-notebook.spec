@@ -4,7 +4,7 @@
 #
 Name     : spyder-notebook
 Version  : 0.3.0
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/81/ac/f15a79e7d123b29919b5f36593c30e157555957e21e62fb142fbb290357d/spyder-notebook-0.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/81/ac/f15a79e7d123b29919b5f36593c30e157555957e21e62fb142fbb290357d/spyder-notebook-0.3.0.tar.gz
 Summary  : Jupyter notebook integration with Spyder
